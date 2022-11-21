@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("weather.jpg");
+    height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search_wrapper {
+    min-width: 600px;
+    min-height: 400px;
+    background-color: rgba(0, 0, 0, 0.290);
+    border-radius: 20px;
+    transition: all ease-in-out 1s;
+}
+
+.deail_wrapper {
+    min-width: 600px;
+    min-height: 400px;
+    background-color: rgba(0, 0, 0, 0.290);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all ease-in-out 1s;
+
+}
+
+.search_wrapper h1 {
+    padding: 20px;
+    transition: all ease-in-out 1s;
+
+}
+
+.search_wrapper .bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    transition: all ease-in-out 1s;
+
+}
+
+.search_wrapper .search {
+    border: none;
+    width: 400px;
+    height: 35px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+    transition: all ease-in-out 1s;
+    
+}
+
+input,
+input:focus,
+input:active,
+input:active:focus {
+    border: none;
+    outline: none;
+}
+.detail_wrapper img{
+    transition: all ease-in-out 1s;
+
+}
+.search_wrapper .button {
+    border: none;
+    width: 80px;
+    height: 35px;
+    background-color: rgb(60, 112, 255);
+    color: #fff;
+    transition: all ease-in-out .5s;
+}
+
+.search_wrapper .button:hover {
+    background-color: blue;
+}
+
+.search_wrapper .btn2 {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: .01px solid rgb(201, 201, 201);
+}
+
+.deail_wrapper .box1 h2 {
+    margin-bottom: 20px;
+    transition: all ease-in-out 1s;
+}
+
+.deail_wrapper .box2 h2 {
+    margin-bottom: 20px;
+    transition: all ease-in-out 1s;
+
+}
+
+.deail_wrapper .box1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.deail_wrapper .box2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #fff;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all ease-in-out 1s;
+
+}
+
+.search_wrapper .error p {
+    margin: 30px;
+    color: red;
+}
+
+@media (max-width:900px) {
+    .deail_wrapper,  .search_wrapper {
+        min-width: 400px;
+        min-height: 400px;
+
+    }
+    
+
+    .search_wrapper .search{
+        width: 250px;
+    }
+    .search_wrapper .button {
+        width: 60px;
+    }
+}
+@media (max-width:700px) {
+  
+    .deail_wrapper,  .search_wrapper {
+        min-width: 300px;
+        min-height: 200px;
+
+    }
+    h2{
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    .search_wrapper .search{
+        width: 200px;
+   
+    }
+    .search_wrapper .button {
+        width: 40px;
+        font-size: 10px;
+    }
+ 
+}
